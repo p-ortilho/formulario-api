@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario com API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <main class="conteudo">
+        <section class="conteudo__secao">
+            
+            <form action="" method="post">
+                <div class="dados__pessoais">
+                    <h1 class="dados__pessoais__titulo">Dados Pessoais</h1>
+                    <div class="dados__pessoais__idenficicacao">
+                        <div class="dados__pessoais__nome">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div class="dados__pessoais__sobrenome">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome">
+                        </div>
+                    </div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+
+                <div class="endereco">
+                    <h1 class="endereco__titulo">Endeço</h1>
+                    <label for="cep">Cep</label>
+                    <input type="text" name="cep" id="cep">
+                    <label for="endereco">Rua</label>
+                    <input type="text" name="endereco" id="endereco">
+                    <label for="bairo">Bairro</label>
+                    <input type="text" name="bairro" id="bairro">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade">
+                    <label for="numero">Número</label>
+                    <input type="text" name="numero" id="numero">
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option> 
+                    </select>
+                </div>
+            
+                <input type="submit" value="Enviar">
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+:root{
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;    
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: #000000;
+    color: #ffffff;
+}
+
+.conteudo{
+    padding: 5rem;
+}
+
+.conteudo__secao{
+    padding: 5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 64px;
+}
+
+.dados__pessoais{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dados__pessoais__titulo{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.dados__pessoais__nome{
+    display: flex;
+    flex-direction: column;
+}
+
+.endereco{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
