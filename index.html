@@ -24,58 +24,78 @@
                             <input type="text" name="sobrenome" id="sobrenome">
                         </div>
                     </div>
-                    <label for="email">E-mail</label>
+                    <label for="email" class="email">E-mail</label>
                     <input type="email" name="email" id="email">
                 </div>
 
 
                 <div class="endereco">
-                    <h1 class="endereco__titulo">Endeço</h1>
-                    <label for="cep">Cep</label>
-                    <input type="text" name="cep" id="cep">
-                    <label for="endereco">Rua</label>
-                    <input type="text" name="endereco" id="endereco">
-                    <label for="bairo">Bairro</label>
-                    <input type="text" name="bairro" id="bairro">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" name="cidade" id="cidade">
-                    <label for="numero">Número</label>
-                    <input type="text" name="numero" id="numero">
-                    <label for="estado">Estado</label>
-                    <select name="estado" id="estado">
-                        <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                            <option value="EX">Estrangeiro</option> 
-                    </select>
-                </div>
-            
-                <input type="submit" value="Enviar">
+                    <h1 class="endereco__titulo">Endereço</h1>
+                    <div class="endereco__principal">
 
+                        <div class="endereco__principal__cep">
+                            <label for="cep">Cep</label>
+                            <input type="text" name="cep" id="cep" maxlength="8">
+                        </div>
+
+                        <div class="endereco__principal__endereco">
+                            <label for="endereco">Rua</label>
+                            <input type="text" name="rua" id="rua">
+                        </div>
+                        
+                        <div class="endereco__principal__numero">
+                            <label for="numero">Número</label>
+                            <input type="text" name="numero" id="numero">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="endereco__secundario">
+                        <div class="endereco__secundario__bairro">
+                            <label for="bairo">Bairro</label>
+                            <input type="text" name="bairro" id="bairro">
+                        </div>
+                        
+                        <div class="endereco__secundario__cidade">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="cidade" id="cidade">
+                        </div>
+                    </div>
+
+                    <div class="endereco__estado__selecao">
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado">
+                            <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option> 
+                        </select>
+                    </div>
+                    <input type="submit" value="Enviar" class="botao__enviar">
             </form>
         </section>
     </main>

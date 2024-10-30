@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
-    
+    --fonte-principal: "Montserrat", serif;
+    --cor-secundaria: #641391;
 }
 
 *{
@@ -40,14 +43,47 @@ form {
     gap: 12px;
 }
 
-.dados__pessoais__titulo{
+.dados__pessoais__titulo, .endereco__titulo{
+    font-family: var(--fonte-principal);
     font-size: 52px;
     font-weight: 700;
 }
 
-.dados__pessoais__nome{
+.dados__pessoais__idenficicacao{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.dados__pessoais__nome, .dados__pessoais__sobrenome, .email, .endereco__principal__cep, .endereco__principal__endereco, .endereco__principal__numero, .endereco__secundario__cidade, .endereco__secundario__bairro, .endereco__estado__selecao{
     display: flex;
     flex-direction: column;
+    gap: 12px;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+#nome, #sobrenome, #email, #cep, #endereco, #bairro, #cidade, #numero, #estado, #rua{
+    width: 500px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 30px;
+    background: rgb(31, 30, 30);
+    border: 2px solid var(--cor-secundaria);
+    outline: none;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#cep{
+    width: 150px;
+    text-align: center;
+    padding-left: 0;
+}
+
+#nome:focus, #sobrenome:focus, #email:focus{
+    border-color: var(--cor-secundaria);
 }
 
 .endereco{
@@ -55,4 +91,21 @@ form {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.endereco__principal, .endereco__secundario{
+    display: flex;
+    gap: 12px;
+}
+
+
+.botao__enviar{
+    background: var(--cor-secundaria);
+    padding: 10px;
+    width: 500px;
+    align-self: center;
+    border-radius: 30px;
+    font-family: var(--fonte-principal);
+    font-size: 1.1rem;
+    font-weight: 700;
 }
